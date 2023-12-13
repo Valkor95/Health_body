@@ -1,0 +1,736 @@
+@import '_mixin';
+@import '_font';
+@import '_variables';
+@import '_icons';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+header.first_box{
+    background-color: $salat;
+        .cont{
+            padding: 22px 82px 26px;
+            @include flex (center, space-between, center, none);
+                &_text{
+                    @include flex (center, center, center, none);
+                        &_txt1{
+                            @include Roboto (24px, 32px, 700);
+                        }
+                        &_txt2{
+                            @include Roboto (24px, 32px, 400)
+                        }
+                }
+
+                &_icons{
+                    @include flex (center, center, center, 24px);
+                    font-size: 24px;
+                }
+        }
+}
+
+header.second_box{
+    background-color: $lighterSalat;
+    .cont{
+        padding: 24px 88px 24px 113px;
+        @include flex (center, space-between, center, none);
+            .menu{
+                @include flex (center, center, center, 25px);
+                @include Roboto (16px, 24px, 400);              
+            }
+
+            .menu_contact{
+                @include flex (center, space-between, center, 32px);
+                @include Roboto (16px, 24px, 400);
+            }
+    }
+}
+
+div.first_box{
+    background-color: $gray;
+    position: relative;
+        img{
+        position: absolute;
+        background-size: 100%;
+        left: 40%;
+        }
+
+    .cont{
+        
+
+        padding: 72px 700px 133px 180px;
+        @include flex (center, center, center, 20px);
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+
+            .txt1{
+                @include Roboto (48px, 56px, 500);
+                color: $darkBlue;
+            }
+
+            .txt2{
+                @include Roboto (48px, 56px, 700);
+                color: $darkBluePlus;
+            }
+
+            .txt3{
+                @include Roboto(16px, 24px, 400);
+                color: $darkBluePlus;
+                width: 76%;
+            }
+
+            &_buttons{
+                @include flex (center, center, center, 18px);
+                @include Roboto (16px, 24px, 400);
+                    .btn1{
+                        height: 56px;
+                        width: 234px;
+                        border-radius: 32px;
+                        background-color: $red;
+                        border: none;
+                        color: $white;
+                    }
+
+                    .btn2{
+                        height: 56px;
+                        width: 165px;
+                        border-radius: 32px;
+                        background-color: $cian;
+                        border: none;
+                        color: $white;
+                    }
+            }
+    }
+}
+
+div.second_box{
+    .cont{
+        padding: 80px 75px 25px 75px;
+        @include flex (center, center, center,none);
+        flex-direction: column;
+            &_text1{
+                @include Roboto (48px, 56px, 500);
+                color: $darkerBlue;
+            }
+
+            &_text2{
+                @include Roboto (24px, 32px, 400);
+                color: $darkBluePlus;
+                margin-top: 20px;
+            }
+
+            .txt{
+                display: grid;
+                grid-template-columns: repeat(3, minmax(375px, auto));
+                grid-column-gap: 32px;
+                margin-top: 50px;
+                    &_txt1{
+                        display: grid;
+                        grid-template-columns: repeat(2, minmax(30px, auto));
+                        grid-column-gap: 15px;
+                            h3{
+                                @include Roboto (48px, 56px, 700);
+                                color: $cian;
+                            }
+
+                            .span{
+                                display: flex;
+                                flex-direction: column;
+                            
+                                .span1{
+                                    @include Roboto (20px, 32px, 700);
+                                    color: $darkBlue;
+                                }
+
+                                .span2{
+                                    @include Roboto (16px, 24px, 400);
+                                    color: $darkBlue;
+                                }
+
+                                .span3{
+                                    @include Roboto (16px, 24px, 400);
+                                    color: $darkBlue;
+                                    padding-top: 16px;
+                                    width: 85%;
+                                }
+                            }    
+                    }
+
+            }
+
+            button{
+                height: 40px;
+                width: 234px;
+                background-color: $white;
+                color: $cian;
+                border: 1px solid $cian;
+                border-radius: 24px;
+                margin-top: 46px;
+                @include Roboto (16px, 24px, 400);
+            }
+    }
+}
+
+.third_box{
+    background: no-repeat url(../Img/3.1_Fruits.png);
+    background-size: 100%;
+    .cont{
+        padding: 25px 75px 45px 75px;
+        @include flex (center, center, center, 32px);
+            &_bar{
+                padding: 16px 10px 40px 10px;
+                background-color: $white;
+                @include flex (center, center, center, none);
+                flex-direction: column;
+                border: 1px solid $white;
+                border-radius: 10px;
+                text-align: center;
+                border-bottom: 8px solid $cian;
+                    img{
+                        width: 365px;
+                        height: 201;
+                    }
+
+                    .bar_span1{
+                        @include Roboto (24px, 32px, 400);
+                        color: $darkBluePlus;
+                        margin-top: 10px;
+                    }
+
+                    .bar_span2{
+                        @include Roboto (16px, 24px, 400);
+                        color: $darkBluePlus;
+                    }
+
+                    .bar_span3{
+                        @include Roboto (16px, 24px, 400);
+                        color: $darkBluePlus;
+                        padding-top: 16px;
+                        width: 75%;
+                    }
+            }
+    }
+}
+
+.fourth_box{
+
+    .cont{
+        padding: 20px 75px 60px 75px;
+        @include flex (center, space-between, flex-start, 130px);
+            .cont1{
+                @include flex (center, center, flex-start, 8px);
+                flex-direction: column;
+                .span1{
+                    @include Roboto (48px, 48px, 400);
+                    color: $cian;
+                }
+
+                .span2{
+                    @include Roboto (24px, 32px, 400);
+                    color: $darkBlue;
+                    margin-top: 10px;
+                }
+
+                .span3, .span4{
+                    @include Roboto (16px, 24px, 400);
+                    color: $darkBlue;
+                    width: 82%;
+                    margin-top: 10px;
+                }
+
+                .span4{
+                    margin-top: 20px;
+                }
+            }
+
+            .cont2{
+                img{
+                border: 3px solid $cian;
+                border-radius: 10px;
+                }
+            }
+    }
+}
+
+.fifth_box{
+    .container{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: url(../Img/5.6_Arrow_Right.svg);
+            right: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .cont{
+        margin: 0 75px 0 75px;
+        border-top: 3px solid $cian;
+        border-bottom: 3px solid $cian;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: url(../Img/5.5_Arrow_Left.svg);
+            bottom: 50%;
+            transform: translateY(50%);
+
+        }
+            .cont1, .cont2{
+                margin-top: 30px;
+                @include flex (center, flex-start, center, none);
+                .menu1{
+                    @include flex (center, center, flex-start, 20px);
+
+                        img{
+                            border-radius: 50%;
+                        }
+
+                        .txt{
+                            @include flex (center, center, flex-start, 8px);
+                            flex-direction: column;
+                            .text1{
+                                width: 53%;
+                                @include Roboto (16px, 24px, 400);
+                                color: $darkBlue;
+
+                                
+                                }
+                            .span{
+                                margin-top: 10px;
+                                .span1{
+                                     @include Roboto (18px, 24px, 500);
+                                    color: $dark;
+                                    }
+                                    .span2{
+                                        @include Roboto (16px, 24px, 400);
+                                        color: $cian;
+                                    }
+                            }
+
+
+                        }
+                }
+            }
+
+            .cont2{
+                margin: 70px 0 30px 85px;
+                @include flex (center, flex-end, center, 70px);
+                
+                    .menu1{
+                        .txt{
+                            .text2{
+                                width: 60%;
+                                @include Roboto (16px, 24px, 400);
+                                color: $darkBlue;
+                            }
+                        }
+
+                    }
+                    
+            }
+    }
+}
+
+.sixth_box {
+    margin-top: 65px;
+        .cont{
+            padding: 32px 75px 48px 75px;
+            background-color: rgba(56, 206, 168, 0.12);
+            @include flex (center, center, center, none);
+            flex-direction: column;
+                &_cont1{
+                    @include Roboto (48px, 56px, 400);
+                    color: $darkerBlue;
+                }
+
+                &_cont2{
+                    @include Roboto (24px, 32px, 400);
+                    color: $darkerBlue;
+                    width: 55%;
+                    text-align: center;
+                    margin-top: 16px;
+                }
+
+                &_cont3{
+                    display: grid;
+                    grid-template-columns: repeat(4, 276px);
+                    grid-column-gap: 32px;
+                    justify-content: center;
+                    margin-top: 32px;
+                        .cards{
+                            display: grid;
+                            grid-template-rows: repeat(3, minmax(24px, auto));
+                            grid-row-gap: 16px;
+                            justify-items: center;
+                            align-items: center;
+                                .span1{
+                                    @include Roboto (22px, 24px, 500);
+                                    color: $darkerBlue;
+                                    margin-top: 16px;
+                                }
+                                .span2{
+                                    width: 100%;
+                                    @include Roboto (16px, 24px, 400);
+                                    color: $darkBlue;
+                                }
+                        }
+                }
+        
+        }
+}
+
+
+.seventh_box{
+
+    .cont{
+        padding: 56px 75px;
+        .cont_table{
+            table {
+                table-layout: fixed;
+                width: 100%;
+                border-collapse:collapse;
+                
+                    tr, td{
+                        border: 1px solid $siren;
+                        text-align: center;                        
+                        padding: 10px;
+                        @include Roboto (16px, 24px, 400);
+                        color: $darkerBlue
+                    }
+
+            .txt {
+                @include flex (center, center, center, none);
+                flex-direction: column;
+                .txt1{
+                @include Roboto (24px, 32px, 400);
+                color: $darkerBlue
+                }
+                .txt2{
+                @include Roboto (16px, 24px, 400);
+                color: $darkBluePlus;
+                }
+            }
+
+            td:first-child{
+                @include Roboto (24px, 32px, 400);
+            }
+
+            .price{
+                @include Roboto (58px, 56px, 300);
+            }
+
+            .top_padding{
+                padding: 32px;
+            }
+
+            .top{
+                border-top: 1px solid $red;
+            }
+                
+            .bottom{
+                border-bottom: 1px solid $red;
+            }
+              
+
+            td:nth-child(2){
+                border-right: 1px solid $red;
+
+            }
+            td:nth-child(3){
+                border-right: 1px solid $red;
+            }
+
+            .button{
+                padding: 32px;
+            }
+
+            button{
+                width: 141px;
+                height: 40px;
+                border-radius: 24px;
+                border: 1px solid $cian;
+                background-color: $white;
+                color: $cian;
+                @include Roboto (16px, 24px,400);
+            }
+
+
+            }
+        }
+    }
+}
+
+.eighth_box{
+    .container{
+        padding: 100px 75px;
+        @include flex (center, flex-start, center, 50px);
+            .cont1, .cont2{
+                @include flex (center, flex-start, center, 90px);
+                flex-direction: column;
+                .txt_txt1{
+                    @include flex (center, center, flex-start, 40px);
+                    h4{
+                        color: $white;
+                        position: relative;
+                        @include Roboto (40px, 24px, 700);
+                        &::before{
+                            position: absolute;
+                            content: url(../Img/8.1_Ellipse.svg);
+                            z-index: -1;
+                            right: 50%;
+                            bottom: 50%;
+                            transform: translateX(50%) translateY(50%);
+
+                        }
+                    }
+                    .span{
+                        @include flex (center, center, flex-start, 10px);
+                        flex-direction: column;
+                        .span1{
+                            @include Roboto (24px, 32px, 400);
+                            color: $darkerBlue;
+                        }
+                        .span2{
+                            @include Roboto (16px, 24px, 400);
+                            color: $darkBlue;
+                            width: 85%;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+.ninth_box{
+    background: no-repeat url(../Img/9.1_Backgr_Img.png);
+    background-size: cover;
+    .cont{
+        padding: 100px 830px 150px 180px;
+        .container{
+            background-color: $white;
+            border-radius: 10px;
+            background-size: cover;
+            padding: 60px 64px 21px 72px;
+            @include flex (center, center, flex-start, 16px);
+            flex-direction: column;
+                .cont1{
+                    @include flex (center, center, flex-start, none);
+                    flex-direction: column;
+                    h4{
+                        @include Roboto (24px, 32px, 400);
+                        color: $cian;
+                    }
+
+                    .span1{
+                        @include Roboto (16px, 24px, 400);
+                        color: $darkerBluePlus;
+                    }
+
+                    .span2{
+                        margin-top: 31px;
+                        @include Roboto (12px, 18px, 400);
+                        color: $darkerBlue;
+                    }
+
+                    .span3{
+                        @include Roboto (12px, 18px, 500);
+                        color: $darkerBlue;
+                    }
+                }
+
+                .cont2{
+                    margin-top: 16px;
+                    input{
+                        width: 352px;
+                        height: 40px;
+                        border-radius: 100px;
+                        padding-left: 20px;
+                        border: 1px solid $lightdarkGray;
+                        background-color: $lighterRed;
+                        &::placeholder{
+                            color: $midleDarkgray;
+                        }
+                        
+                    }  
+                }
+
+                .cont3{
+                    @include flex (center, center, center, 24px);
+                    button{
+                        height: 40px;
+                        width: 135px;
+                        border: 0;
+                        background-color: $cian;
+                        color: $white;
+                        border-radius: 100px;
+                    }
+                    .span4{
+                        @include Roboto (9px, 24px, 400);
+                        color: $darkerBlue;
+                    }
+                }
+            }
+    }
+    
+}
+
+.tenth_box{
+    .cont{
+        padding: 100px 180px 72px 180px;
+        @include flex (center, center, center, 16px);
+        flex-direction: column;
+        h2{
+            @include Roboto (48px, 56px, 500);
+            color: $darkerBlue;
+        }
+
+        .span1{
+            @include Roboto (24px, 32px, 400);
+            color: $darkerBluePlus;
+            width: 86%;
+            text-align: center;
+        }
+
+        .cards{
+            margin-top: 8px;
+            display: grid;
+            grid-template: repeat(2, minmax(166px, auto)) / repeat(2, minmax(400px, auto));
+            grid-row-gap: 70px;
+            grid-column-gap: 16px;
+            .card{
+                @include flex (center, center, flex-start, 10px);
+                img{
+                    border-radius: 100px
+                }
+
+                .text{
+                    @include flex (center, center, flex-start, 8px);
+                    flex-direction: column;
+                    .head{
+                        @include flex (center, center, center, 42px);
+                            .span2{
+                                @include Roboto (18px, 24px, 500);
+                                color: $cian;
+                            }
+                            &_icons{
+                            display: grid;
+                            grid-template-columns: repeat(4, minmax(16px, auto));
+                            grid-column-gap: 24px;
+                        }
+                    }
+
+                    .span3{
+                        @include Roboto (12px, 18px, 700);
+                        color: $darkerBlue;
+                    }
+
+                    .span4{
+                        @include Roboto (16px, 24px, 400);
+                        color: $darkerBluePlus;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+
+        .span5{
+            @include Roboto (24px, 32px, 400);
+            color: $darkerBluePlus;
+            margin-top: 50px;
+        }
+    }
+}
+
+.eleventh_box{
+    background-color: $cian;
+    .cont{
+        @include flex (center, center, center, 16px);
+        padding: 76px 255px 76px 283px;
+        .span1{
+            @include Roboto (24px, 32px, 700);
+            color: $white;
+        }
+
+        .btn{
+            @include Roboto (16px, 24px, 400);
+            color: $white;
+            background-color: $cian;
+            height: 40px;
+            width: 211px;
+            border-radius: 24px;
+            border: 1px solid $white;
+        }
+    }
+}
+
+.twelfth_box{
+        .cont{
+            padding: 23px 255px 15px 283px;
+            // @include flex (center, space-between, center, none);
+            display: grid;
+            grid-template-columns: repeat(4, minmax(98px, auto));
+            grid-column-gap: 48px;
+                .card1{
+                    // @include flex (center, center, center, 8px);
+                    // flex-direction: column;
+                    margin-right: 136px;
+                    display: grid;
+                    grid-template-rows: repeat(4, minmax(18px, auto));
+                        .span1{
+                            @include Roboto  (12px, 14px, 400);
+                            color: $darkerBlue;
+                            width: 61%;
+                        }
+
+                        .span2{
+                            @include Roboto  (12px, 14px, 400);
+                            color: $dark;
+                            margin-top: 32px;
+                        }
+
+                        .span3{
+                            @include Roboto  (12px, 14px, 400);
+                            color: $darkBluePlus;
+                            margin-top: 8px;
+                            width: 70%;
+                        }
+
+                        .btn{
+                            @include Roboto (16px, 24px, 400);
+                            color: $cian;
+                            background-color: $white;
+                            height: 40px;
+                            width: 193px;
+                            border-radius: 24px;
+                            border: 1px solid $cian;
+                            margin-top: 16px;
+                        }
+                }
+
+                .list{
+                    h4{
+                        @include Roboto (16px, 24px, 400);
+                        color: $darkBluePlus;
+                    }
+
+                    ul{
+                        margin-top: 24px;
+                        display: grid;
+                        grid-template-rows: repeat(5, minmax(20px,  auto));
+                        @include Roboto  (16px, 35px, 400);
+                        color: $darkerBlue;
+                        
+                    }
+                    
+
+                }
+        }
+}
+
+
+
