@@ -474,6 +474,24 @@ div.second_box{
                 flex-direction: column;
                 .txt_txt1{
                     @include flex (center, center, flex-start, 40px);
+                    div.question{
+                        position: relative;
+                        background-color: $cian;
+                        border-radius: 100%;
+                        width: 180px;
+                        height: 60px;
+                        bottom: 10px;
+                            span{
+                                position: absolute;
+                                color: $white;
+                                @include Roboto (40px, 24px, 700);
+                                transform: translateX(100%);
+                                top: 30%;
+                            }
+                        
+                        
+                    }
+                    
                     h4{
                         color: $white;
                         position: relative;

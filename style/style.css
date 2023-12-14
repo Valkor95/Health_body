@@ -666,6 +666,25 @@ div.second_box .cont button {
   align-items: flex-start;
   gap: 40px;
 }
+.eighth_box .container .cont1 .txt_txt1 div.question, .eighth_box .container .cont2 .txt_txt1 div.question {
+  position: relative;
+  background-color: #38CEA8;
+  border-radius: 100%;
+  width: 180px;
+  height: 60px;
+  bottom: 10px;
+}
+.eighth_box .container .cont1 .txt_txt1 div.question span, .eighth_box .container .cont2 .txt_txt1 div.question span {
+  position: absolute;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 24px;
+  font-weight: 700;
+  transform: translateX(100%);
+  top: 30%;
+}
 .eighth_box .container .cont1 .txt_txt1 h4, .eighth_box .container .cont2 .txt_txt1 h4 {
   color: #FFF;
   position: relative;
