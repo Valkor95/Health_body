@@ -39,7 +39,16 @@ header.second_box{
         @include flex (center, space-between, center, none);
             .menu{
                 @include flex (center, center, center, 25px);
-                @include Roboto (16px, 24px, 400);              
+                @include Roboto (16px, 24px, 400);  
+                    &_txt7{
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: url(../Img/1.2_Arrow.svg);
+                            left: 110%;
+                            bottom: 5%;
+                        }
+                    }            
             }
 
             .menu_contact{

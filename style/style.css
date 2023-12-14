@@ -108,6 +108,15 @@ header.second_box .cont .menu {
   line-height: 24px;
   font-weight: 400;
 }
+header.second_box .cont .menu_txt7 {
+  position: relative;
+}
+header.second_box .cont .menu_txt7::before {
+  position: absolute;
+  content: url(../Img/1.2_Arrow.svg);
+  left: 110%;
+  bottom: 5%;
+}
 header.second_box .cont .menu_contact {
   display: flex;
   align-content: center;
